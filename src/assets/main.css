@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-gradient-to-b from-[#d6e2f5] to-[#ededed] text-black font-noto;
+}
+
+body.darkMode {
+  @apply min-h-screen bg-gradient-to-b from-[#040918] to-[#091540] text-white font-noto;
+}
+
+.dark-card {
+  @apply flex flex-col gap-5 p-2 bg-[#2f364b] text-white rounded-lg;
+}
+
+.light-card {
+  @apply flex flex-col gap-5 p-2 bg-white text-black rounded-lg;
+}
+
+button {
+  @apply bg-[#545969] rounded-3xl px-3 py-1;
+}
+
+.dark-button {
+  @apply text-[12px] bg-[#2f364b] border border-[#545969] hover:bg-[#f25c54] hover:text-[#091540];
+}
+
+.light-button {
+  @apply text-[12px] bg-white border border-[#545969] hover:bg-[#f25c54] hover:text-white;
+}
+
+.light-theme {
+  @apply bg-[#cfcfcf] rounded-lg p-2 mr-2 cursor-pointer hover:bg-[#545969];
+}
+
+.dark-theme {
+  @apply bg-[#545969] rounded-lg p-2 mr-2 cursor-pointer hover:bg-[#474e64];
+}
+
+.dark-error {
+  @apply text-white;
+}
+
+.light-error {
+  @apply text-red-500;
+}
+
+.dark-extensionList-container {
+  @apply flex flex-col sm:flex-col gap-2 md:flex-row justify-between items-center text-white mt-3 mb-2;
+}
+
+.light-extensionList-container {
+  @apply flex flex-col sm:flex-col gap-2 md:flex-row justify-between items-center text-black mt-3 mb-2;
+}
