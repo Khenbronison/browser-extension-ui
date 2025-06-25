@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-gradient-to-b from-[#d6e2f5] to-[#ededed] text-black font-noto;
+  @apply min-h-screen overflow-auto  lg:overflow-hidden bg-gradient-to-b from-[#d6e2f5] to-[#ededed] text-black font-noto;
 }
 
 body.darkMode {
-  @apply min-h-screen bg-gradient-to-b from-[#040918] to-[#091540] text-white font-noto;
+  @apply min-h-screen overflow-auto lg:overflow-hidden bg-gradient-to-b from-[#040918] to-[#091540] text-white font-noto;
 }
 
 .dark-card {

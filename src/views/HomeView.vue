@@ -16,8 +16,8 @@ export default {
 
     extensionloader()
 
-    const removeExtension = (name) => {
-      const index = extensions.value.findIndex((ext) => ext.name === name)
+    const removeExtension = (id) => {
+      const index = extensions.value.findIndex((ext) => ext.id === id)
       if (index !== -1) {
         extensions.value.splice(index, 1)
       }

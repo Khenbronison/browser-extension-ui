@@ -19,7 +19,7 @@
       <div class="flex items-center justify-between">
         <button
           :class="[setMode ? 'light-button' : 'dark-button']"
-          @click="$emit('remove-extension', extension.name)"
+          @click="$emit('remove-extension', extension.id)"
         >
           Remove
         </button>
