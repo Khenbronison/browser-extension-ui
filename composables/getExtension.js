@@ -5,7 +5,7 @@ const getExtension = () => {
   const error = ref(null)
   const extensionloader = async () => {
     try {
-      const response = await fetch('http://localhost:3000/extensions')
+      const response = await fetch('/data.json')
 
       if (!response.ok) {
         throw new Error('Failed to fetch extensions')
