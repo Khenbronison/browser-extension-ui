@@ -10,7 +10,7 @@
       :class="[setMode ? 'light-card' : 'dark-card']"
     >
       <div class="flex items-center">
-        <span class="mr-2"><img :src="'/src' + extension.logo" alt="logo" /></span>
+        <span class="mr-2"><img :src="extension.logo" alt="logo" /></span>
         <div>
           <h1 class="text-[14px] font-bold">{{ extension.name }}</h1>
           <p class="text-[12px]">{{ extension.description }}</p>
@@ -32,7 +32,7 @@
 <script>
 import ExtensionToggle from './ExtensionToggle.vue'
 import changeTheme from '../../../composables/changeTheme'
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 
 export default {
   name: 'Extension',

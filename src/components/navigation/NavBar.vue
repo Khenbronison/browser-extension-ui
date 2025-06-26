@@ -7,8 +7,8 @@
       ]"
     >
       <span class="cursor-pointer">
-        <img v-if="setMode" src="/src/assets/images/logo.svg" alt="logo" />
-        <img v-else src="/src/assets/images/logo-2.svg" alt="logo" />
+        <img v-if="setMode" src="/assets/images/logo.svg" alt="logo" />
+        <img v-else src="/assets/images/logo-2.svg" alt="logo" />
       </span>
       <span
         @click="toggleMode"

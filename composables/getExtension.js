@@ -12,7 +12,7 @@ const getExtension = () => {
       }
 
       const data = await response.json()
-      extensions.value = data.map((ext) => ({
+      extensions.value = data.extensions.map((ext) => ({
         id: crypto.randomUUID(),
         ...ext,
       }))
